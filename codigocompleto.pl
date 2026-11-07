@@ -1,3 +1,4 @@
+% Integrantes: Valter Simão e Igor Coelho Freitas
 :- discontiguous gosta/2, tempomax/2, assina/2.
 
 % PARTE 1 - BASE DE CONHECIMENTO
