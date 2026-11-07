@@ -62,3 +62,20 @@ assina(carla, plataformab).
 gosta(diego, ficcaocientifica).
 tempomax(diego, 100).
 assina(diego, plataformaa).
+
+
+% PARTE 4 - JUSTIFICATIVA
+justificar(Usuario, Filme) :-
+    recomendar(Usuario, Filme),
+    !,
+    filme(Filme, Genero, Duracao),
+    tempomax(Usuario, Tempo),
+    once(( disponivel(Filme, Plataforma),
+           assina(Usuario, Plataforma) )),
+    format('~w foi recomendado para ~w porque:~n', [Filme, Usuario]),
+    format('- Genero: ~w esta entre as preferencias de ~w.~n', [Genero, Usuario]),
+    format('- Duracao: ~w min nao ultrapassa o limite de ~w min.~n', [Duracao, Tempo]),
+    format('- Disponibilidade: esta na ~w, que ~w assina.~n', [Plataforma, Usuario]).
+
+justificar(Usuario, Filme) :-
+    format('~w NAO e recomendado para ~w.~n', [Filme, Usuario]).
