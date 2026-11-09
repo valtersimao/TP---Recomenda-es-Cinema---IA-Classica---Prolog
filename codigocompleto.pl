@@ -47,10 +47,10 @@ gosta(ana, ficcaocientifica).
 tempomax(ana, 120).
 assina(ana, plataformaa).
 
-% Bruno: comedia + ficcao, 110 min, plataforma B
+% Bruno: comedia + ficcao, 210 min, plataforma B
 gosta(bruno, comedia).
 gosta(bruno, ficcaocientifica).
-tempomax(bruno, 110).
+tempomax(bruno, 210).
 assina(bruno, plataformab).
 
 % Carla: so animacao, 95 min, assina as duas plataformas
